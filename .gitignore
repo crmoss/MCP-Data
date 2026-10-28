@@ -1,2 +1,4 @@
 credentials.local.json
 .env
+
+node_modules/

@@ -1,0 +1,26 @@
+/* Notion의 여백, 단순한 타이포그래피와 중립색을 참고한 화면 */
+:root{font-family:Inter,Pretendard,"Malgun Gothic",sans-serif;color:#191919;background:#fff}
+.top{border:0;background:#fff}.top-inner{max-width:1240px;height:76px;padding:0 32px}
+.brand{font-size:17px;font-weight:750;color:#191919;letter-spacing:-.04em}.mark{width:36px;height:36px;border:2px solid #191919;background:#fff;color:#191919;border-radius:7px;font-size:20px;box-shadow:2px 2px 0 #191919}
+.top-inner .top-label,.top-link{color:#191919!important;background:#f5f5f4;border:1px solid #e7e7e5;border-radius:7px;padding:10px 16px!important;font-size:17px!important;font-weight:700;line-height:1.2;text-decoration:none;transition:background .15s}
+.top-label:hover,.top-link:hover{background:#eaeae8}
+.hero,.mcp-hero{background:#fff;border:0}.hero-inner,.mcp-hero .mcp-wrap{max-width:1180px;padding:96px 32px 82px}
+.eyebrow,.section-kicker{color:#787774;letter-spacing:.09em;font-size:11px}.eyebrow span{background:#2383e2}
+h1,.mcp-hero h1{color:#191919;font-size:clamp(38px,5.5vw,64px);line-height:1.17;letter-spacing:-.06em;font-weight:800;margin:20px 0}
+h1 em{color:#191919}.intro,.mcp-hero p:not(.section-kicker){color:#555;font-size:17px;line-height:1.8;margin-bottom:30px}
+.hero-pattern{width:285px;height:225px;top:110px;right:12%;transform:rotate(6deg);opacity:1;border:2px solid #252525;border-radius:15px;background:#f7f6f3;box-shadow:8px 8px 0 #e8e7e3}
+.hero-pattern:before{content:'DATA';position:absolute;left:22px;top:20px;font-size:13px;font-weight:800;letter-spacing:.12em;color:#333}.hero-pattern:after{content:'검색  ·  연결  ·  활용';position:absolute;left:22px;right:22px;bottom:25px;padding:16px 10px;background:#fff;border:1px solid #d9d9d6;border-radius:7px;color:#777;font-size:13px}
+.hero-pattern i{border:0;border-radius:2px;inset:auto;left:22px;height:9px;background:#dadad6}.hero-pattern i:nth-child(1){top:60px;width:68%}.hero-pattern i:nth-child(2){top:80px;width:55%}.hero-pattern i:nth-child(3){top:100px;width:72%}.hero-pattern i:nth-child(4){top:120px;width:42%}.hero-pattern i:nth-child(5){display:none}
+.search{height:64px;max-width:650px;background:#fff;border:1px solid #bcbcb8;border-radius:9px;box-shadow:0 2px 8px #0000000b}.search:focus-within{border-color:#2383e2;box-shadow:0 0 0 3px #2383e226}.search-icon{color:#5f5e5b}.search button,.url-box button{background:#2383e2;border-radius:6px;color:#fff}.search button:hover,.url-box button:hover{background:#176fc3}
+.suggestions{color:#999}.suggestions button{border:1px solid #e5e5e3;background:#f7f7f5;color:#555;border-radius:5px}.suggestions button:hover{background:#ececeb}
+.content{max-width:1180px;padding:60px 32px 90px;border-top:1px solid #eaeae8}.section-header h2,.panel h2{color:#191919;letter-spacing:-.04em}.section-header p:not(.section-kicker){color:#787774}.source{background:#f7f7f5;border:1px solid #ededeb;color:#777;border-radius:6px}.source span{background:#2383e2}
+.toolbar{border-bottom:1px solid #e8e8e6}.filters button{color:#787774}.filters button.active{color:#191919;border-color:#191919}.count{color:#787774}
+.card,.panel{border:1px solid #e7e7e5;border-radius:10px;box-shadow:0 2px 8px #00000008}.card{padding:24px;transition:border-color .15s,box-shadow .15s}.card:hover{border-color:#ccc;box-shadow:0 4px 14px #00000010}.card h3{color:#191919}.description,.muted{color:#666}.metadata{color:#858581}.tag{background:#eef5fc;color:#3978b2;border-radius:5px}.card a{color:#2383e2;text-decoration:none}.card a:hover{text-decoration:underline}
+.empty-icon{background:#f4f4f2;color:#777}.status strong{color:#444}.pagination button{border:1px solid #e2e2e0;border-radius:6px;color:#555}
+.mcp-wrap{max-width:1180px}.mcp-content{border-top:1px solid #eaeae8;padding-top:48px}.mcp-tags span,.badge{color:#5c5c5a;background:#f5f5f3;border:1px solid #e9e9e7;border-radius:5px}.mcp-grid{gap:20px}.panel{padding:30px}.lead,.muted{color:#777}.url-box input{background:#f7f7f5;border:1px solid #e2e2df;border-radius:6px;color:#333}.steps b{background:#f1f1ef;color:#333}.steps strong{color:#191919}.notice{border:0;background:#f5f5f3;color:#666;border-radius:7px}.example{background:#f7f7f5;border-color:#eeeeec;color:#444;border-radius:7px}.tool-name{color:#2383e2}.badge{background:#eef7f2;color:#398564;border:0}
+footer{max-width:1180px;border-color:#eaeae8;color:#888}footer strong{color:#333}footer a{color:#555}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #2383e2;outline-offset:3px}
+@media(max-width:900px){.hero-pattern{right:4%;opacity:.28;width:240px}.hero-inner{position:relative}.search,.suggestions,.hero-inner h1,.intro,.eyebrow{position:relative;z-index:1}}
+@media(max-width:700px){.top-inner{height:68px;padding:0 20px}.top-inner .top-label,.top-link{font-size:15px!important;padding:9px 10px!important}.brand{font-size:15px}.hero-inner,.mcp-hero .mcp-wrap{padding:62px 20px}.hero-pattern{display:none}.content{padding:42px 20px 70px}.mcp-content{padding-top:32px}.panel{padding:22px}h1,.mcp-hero h1{font-size:38px}.intro,.mcp-hero p:not(.section-kicker){font-size:15px}}
+
+.top-inner .top-label{font-size:28px!important}
+@media(max-width:700px){.top-inner .top-label{font-size:20px!important}}

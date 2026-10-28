@@ -1,0 +1,38 @@
+/* 행정안전부 홈페이지의 남색·파랑·회색 계열을 참고한 공통 화면 */
+:root{color:#30323a;background:#fff}
+.top{border-top:4px solid #003764;border-bottom:1px solid #d7d7d7;background:#fff}
+.top-inner{height:86px}
+.brand{color:#052561;font-size:19px;font-weight:700;letter-spacing:-.04em}
+.mark{background:#003764;border-radius:3px}
+.top-label,.top-link{font-size:14px!important;color:#003764!important;font-weight:700;text-decoration:none}
+.hero,.mcp-hero{background:#f2f5f9;border-bottom:1px solid #dce4ed}
+.hero-inner{padding-top:64px;padding-bottom:58px}
+.eyebrow,.section-kicker{color:#364b8e;letter-spacing:.1em}
+h1{color:#30323a}h1 em{color:#003764}
+.intro,.mcp-hero p:not(.section-kicker){color:#4f6280}
+.hero-pattern{opacity:.25}.hero-pattern i{border-color:#4f6280}
+.search{border:2px solid #003764;border-radius:4px;box-shadow:none}
+.search-icon{color:#003764}.search button,.url-box button{background:#003764;border-radius:3px}
+.search button:hover,.url-box button:hover{background:#052561}
+.suggestions button{border:1px solid #d7d7d7;border-radius:4px;color:#364b8e;background:#fff}
+.content{background:#fff}.source{border-radius:3px;color:#4f6280;background:#f7f7f7}
+.source span{background:#0088ff}.toolbar{border-bottom:1px solid #ccc}
+.filters button{color:#666}.filters button.active{color:#003764;border-color:#003764}
+.card,.panel{border:1px solid #d7d7d7;border-radius:4px;box-shadow:none}
+.card h3{color:#30323a}.description,.muted{color:#555}.metadata{color:#666}
+.tag{background:#edf3fb;color:#003764;border-radius:3px}
+.card a{color:#003764;text-decoration:underline;text-underline-offset:3px}
+.empty-icon{background:#f2f5f9;color:#4f6280}.status strong{color:#333}
+.pagination button{border-radius:3px;border-color:#ccc;color:#333}
+footer{border-top:1px solid #d7d7d7;color:#666}footer strong{color:#333}footer a{color:#003764}
+.mcp-tags span,.badge{border-radius:3px;color:#003764;border:1px solid #cbd7e4}
+.url-box input{border-radius:3px;border-color:#ccc}.steps b{background:#eaf1fa;color:#003764}
+.notice{background:#f2f5f9;border-left:3px solid #364b8e;border-radius:0;color:#364b8e}
+.example{background:#f7f7f7;border-color:#e6e6e6;border-radius:3px;color:#333}
+.tool-name{color:#003764}.badge{background:#f2f5f9}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #0088ff;outline-offset:3px}
+@media(max-width:700px){.top-label{display:block;font-size:12px!important}.top-inner{height:72px}}
+
+/* 검색 화면에서 AI 연결 메뉴를 더 잘 보이게 표시 */
+.top-inner .top-label{display:inline-flex;align-items:center;padding:12px 16px;font-size:28px!important;line-height:1.2}
+@media(max-width:700px){.top-inner .top-label{font-size:20px!important;padding:10px 8px}}

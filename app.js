@@ -18,7 +18,7 @@ function showStatus(message, description = '') {
   status.append(icon, title, detail);
 }
 function text(tag, value, css) { const node = document.createElement(tag); if (css) node.className = css; node.textContent = value || '정보 없음'; return node; }
-function safeUrl(value) { try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) ? url.href : null; } catch { return null; } }
+function safeUrl(value) { try { const url = new URL(value); return url.protocol === 'https:' && ['data.go.kr', 'www.data.go.kr'].includes(url.hostname) && !url.username && !url.password && !url.port ? url.href : null; } catch { return null; } }
 function renderItem(item) {
   const card = document.createElement('article'); card.className = 'card';
   card.append(text('span', ({ FILE:'파일데이터', API:'오픈 API', STD:'표준데이터' })[item.dataType] || item.dataType, 'tag'));
@@ -40,7 +40,8 @@ async function search() {
   if (state.dataType) query.set('dataType', state.dataType);
   try {
     const response = await fetch('/api/search?' + query);
-    const body = await response.json();
+    if (response.status === 429) throw new Error('요청이 너무 많습니다. 잠시 후 다시 시도해 주세요.');
+    let body; try { body = await response.json(); } catch { throw new Error('검색 서비스에 연결하지 못했습니다. 잠시 후 다시 시도해 주세요.'); }
     if (requestId !== latestRequest) return;
     if (!response.ok) throw new Error(body.error || '검색에 실패했습니다.');
     if (!Array.isArray(body.data)) throw new Error('검색 결과 형식을 확인할 수 없습니다.');
